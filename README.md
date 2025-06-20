@@ -99,7 +99,7 @@ src/
 ```bash
 # Clone the repository
 git clone https://github.com/Mayanks08/LMS-Project
-cd eduplatform-frontend
+cd frontend
 
 # Install dependencies
 npm install

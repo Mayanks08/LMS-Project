@@ -22,6 +22,7 @@ This is a **React** frontend for an educational web platform that supports **use
 ---
 
 ## 🗂️ Project Structure
+```
 src/
 
 ├── Components/
@@ -79,6 +80,7 @@ src/
 
 └── App.css
 
+```
 
 
 ---

@@ -26,13 +26,16 @@ app.use(cookieParser())
 app.use(morgan('dev'))
 app.use(express.urlencoded({extended:true}));
 
-app.use("/ping",function(req,res){
-    res.send("pong")
-})
 
 app.use('/api/v1/User', UserRoutes)
 app.use('api/v1/courses',CourseRoutes)
 app.use('api/v1/payments',PaymentRoutes)
+
+app.get('/',(req,res) =>{
+    res.send("Welcome to LMS Backend")
+    activeServer = true;
+
+})
 
 // routes of 3 modules
 app.all("*",(req,res) =>{
